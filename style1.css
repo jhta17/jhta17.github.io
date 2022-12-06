@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta+Malar&display=swap");
+
+body {
+  font-family: "Mukta Malar", sans-serif;
+  background-image: url("https://64.media.tumblr.com/f171857e419c048dc5040bde7ca12eae/tumblr_inline_mkjlhj9p4R1qz4rgp.png");
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #f40968;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+
+#container {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.section {
+  z-index: 0;
+  margin-top: 10%;
+  margin-bottom:5%;
+  background-color: #fff;
+  border: 1px solid #888;
+  padding: 4em;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+  box-shadow: 1px 1px 3px #aaa;
+}
+.section:hover {
+  border: 1px solid #000000;
+  box-shadow: 3px 3px 5px #000000;
+}
+
+.header:hover {
+  box-shadow: 2px 2px 2px #000000;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  letter-spacing: 5px;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #888;
+  box-shadow: 3px 3px 5px #aaa;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
