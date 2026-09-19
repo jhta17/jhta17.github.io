@@ -8,7 +8,6 @@ import {
   Burger,
   Image,
 } from "@mantine/core";
-import { BiCloud, BiHeart, BiCurrentLocation } from "react-icons/bi";
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -49,7 +48,14 @@ export function InfoCard({ title, description, icon }) {
   );
 }
 
-export function ProjectCard({ title, description, year, skills, image }) {
+export function ProjectCard({
+  title,
+  description,
+  year,
+  skills,
+  image,
+  artifact,
+}) {
   return (
     <Paper className={"project-card"} shadow="xs" p="xl">
       <div className={"project-img"}>
@@ -58,7 +64,8 @@ export function ProjectCard({ title, description, year, skills, image }) {
       <div className={"project-section"}>
         <Text className={"project-title"}>{title}</Text>
         <Text className={"project-skills"}>
-          {year} | Skills practiced: {skills}
+          {year} | Skills practiced: {skills} |{" "}
+          {artifact ? <a href={artifact}>Artifact</a> : null}
         </Text>
         <Text className={"project-description"}>{description}</Text>
       </div>

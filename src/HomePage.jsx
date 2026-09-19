@@ -24,11 +24,10 @@ const projectData = [
   {
     title:
       "Understanding the fundamentals of machine learning through Spotify's Web API",
-    description: `The Spotify Web API used to be much more fully featured, allowing access to various data points such as danceability, energy, and tempo that made for good features to use for a custom classifier. This project was a fun way learn core machine learning concepts such as feature engineering and common algorithms. In the project, I pulled this data using the api, transformed and formatted it in a way that was disgestible for various keras models to train on, and then analyzed the output of the trained machine learning models to understand how they work on the same data. A full analysis is available ${(
-      <a> here</a>
-    )}`,
+    description: `The Spotify Web API used to be much more fully featured, allowing access to various data points such as danceability, energy, and tempo that made for good features to use for a custom classifier. This project was a fun way learn core machine learning concepts such as feature engineering and common algorithms. In the project, I pulled this data using the api, transformed and formatted it in a way that was disgestible for various keras models to train on, and then analyzed the output of the trained machine learning models to understand how they work on the same data. A full analysis is available as the artifact.`,
     skills: "Python, Tensorflow, Pandas, Numpy, Web API's, Visualizations",
     image: spotifyprojectimg,
+    artifact: "public/spotify_ml.pdf",
   },
   {
     title: "Teaching web development",
@@ -100,6 +99,7 @@ export function Subgrid() {
       image={item.image}
       year={item.year}
       key={item.title}
+      artifact={item.artifact}
     />
   ));
   const half = Math.ceil(items.length / 2);
@@ -137,9 +137,9 @@ export function HomePageComponent({ style, title, description }) {
           <Heading className="ho-introtitle" content="Tanaya Jha"></Heading>
           <div id="description">
             <span className="ho-subheading-2">Software Engineer ✩</span>
-            <span className="ho-subheading-2"> University of Maryland ✩</span>
+            <span className="ho-subheading-2"> University of Maryland ✩ </span>
             <span className="ho-subheading-2">
-              data-driven decisions, human psychology, and programming systems
+              Data-driven decisions, human psychology, and programming systems
             </span>
           </div>
           <div id="subdesc">
